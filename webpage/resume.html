@@ -1,0 +1,101 @@
+<html></html>
+  <head style="background-color: whitesmoke;">
+    <style>
+        ul {
+              list-style-type: none;
+              margin: 0;
+              padding: 0;
+              overflow: hidden;
+              background-color: black;
+              border: 5px solid white;
+            }
+    
+        li {float:left;}
+    
+        li a{display: block;
+            color: cyan;
+            text-align: center;
+            padding: 20px;
+            font-size: x-large;
+            text-decoration:white;
+            }
+        li a:hover {
+            background-color:black;;
+        }
+    </style>
+          <ul>
+            <li><a href='http://127.0.0.1:5500/HTML/webpage/webpage.html'>Home</a></li>
+            <li><a href='http://127.0.0.1:5500/HTML/webpage/HTML_ForProject.html'>Personal Projects</a></li>
+            <li><a href='http://127.0.0.1:5500/HTML/webpage/resume.html'>Resume</a></li>
+            <li><a href='http://127.0.0.1:5500/HTML/webpage/fileUploader.html'>File Uploader</a></li>
+        </ul>
+        <hr>
+    </head>
+    <body style="background-color: black; color: white;">
+    <h1 style="text-align: center; color:cyan; font-family:Times New Roman">Resume</h1>
+    <hr>
+
+    <p style="font-size: larger;"><img src="IMG-3495 (1).jpg" ALIGN="left" width="200" height="240" alt="This is a picture of me"><BR CLEAR=”left” />
+        Hi! My name is Jordan Kraude. This is the first webpage that I have ever created. I wanted to make this so that I can add on to it and
+        show who I am and what I can do for the moment. A little about me. I was born in California then we moved when I was little to the midwest.
+        we lived there until I turned 14 then we moved back to California. I am big into sports, music, movies, kayaking, coding, cooking,
+        baking, and learning new things. <em>I have always tried to be the best at everything I am doing and improve everyday. At the moment I
+        am studying computer science at BYU Idaho maintaining a 4.0 GPA through 40 credits. I am fairly new to most languages but I am at least knowledgable and can
+        write in Javascript, Python, and HTML. I hope you like my website and the things I showcase here.</em>
+        <address title="Contact information">Email: JordankraudeTP@gmail.com<br>
+            Phone Number: 209-495-2253<br>
+            Address: 1410 Burchell Hill Dr. Oakdale, CA 95361
+        </address>
+    </p>
+    <h2 style="color: cyan;">Experience <hr></h2>
+    <p>
+        <h3 style="text-align: left;">Pro Wide Drywall <address>Apprentice (06/2016-08/2016)</address></h3>
+        At Pro Wide Drywall I was a apprentice. I was with my employer and teacher Jesus during most of my
+        time while working for Pro Wide. I was in charge of learning the skills and goings of drywall including,
+        laying and cutting drywall, taping and mudding, caulking, and spraying the final texture. <b>Overall my main
+        responsibility can be summarized by saying I was responsible to learn and pay attention.</b>
+        <h3>Newland Interiors <address>Team Leader (06/2017-08/2017)</address></h3> 
+        I was given tasks at Newland Interiors that I then delegated to my team members to accomplish before the
+        date in which we needed to be finish. <b>I coordinated and worked with the project manager and gave reports
+        on our team and our progress.</b> We were given tasks to demolish and refurnish rooms which included taking out
+        old furniture, beds, and bad electrical. <b>We needed to carry heavy equipment</b> and work power tools. 
+        <h3>Spray and Son Janitorial <address>Crew Worker (05/2018-08/2018)</address></h3> 
+        At Spray and Son I worked as part of a team to finish our weekly cleaning tasks in a timely manner.
+        <b>Basic janitorial skills were needed and were learned.</b>
+    </p>
+    <br>
+    <h2 style="color: cyan;">Skills<hr></h2>
+    <pre style="text-align: start; font-size: larger; font-family: Times New Roman;">
+        <li>Communication</li>
+        <li>Hardworking</li>
+        <li>Teamwork</li>
+        <li>Charismatic</li>
+        <li>Organization</li>
+        <li>Ability to Learn and Adapt</li>
+        </pre>
+
+    <p style="text-align: center; color: white;"> 
+        <br>
+        <a style= "color: cadetblue"; href="https://www.linkedin.com/in/jordan-kraude-ba20411b8" target="_blank">Click here to be linked to my Linkedin Account to connect with me</a>
+        <hr>
+    </p>
+    <img src="Keanu Reeves.gif" alt="Thank You" style="float:right; margin-right: 30px; margin-bottom: 30px;" width="200" height="250">
+    <h3 style="text-align: center; margin-left: 230px; color: cyan;">If you would like me to get in contact with you </h3>
+    <form action="HTML\webpage\emailForResume.php" method="POST"name="message" margin-left:10px;>
+    <label for:contactName>Please type your name: </label>
+    <input type="text" id="contactName" name="contactName"><br><br>
+    <label for:contactEmail>Please enter an email in which I can get in contact with you: </label>
+    <input type="email" id="contactEmail" name="contactEmail" maxlength="50"> <br><br>
+    <label for:contactNumber>Enter the phone number you would like me to message or call to get back in contact: </label>
+    <input type="number" id="contactNumber" name="contactNumber" max="9"><br><br>
+    <label for:time>Enter the time that would work best for you for me to reach out: </label>
+    <input type="time" id="time" name="time" placeholder="exp. 6:00 PM"><br><br>
+    <input type="submit" id= "submit" value="submit">
+
+    </form>
+</body>
+
+<script src="resume.js"></script>
+
+<!--input type="email" id="email"
+       pattern=".+@globex\.com" size="30" required-->

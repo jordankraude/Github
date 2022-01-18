@@ -1,0 +1,67 @@
+<html>
+<div>
+<style>
+html {
+    height: 100%;
+}
+body {background: black;
+color: white;}
+
+div {display: flex;
+justify-content: center;
+flex-direction: column;
+align-items: center;
+font-family: 'Roboto Mono', monospace;}
+
+ul {
+        list-style-type: none;
+        margin: 0;
+        padding: 0;
+        overflow: hidden;
+        background-color: black;
+        border: 5px solid white;
+    }
+
+li {float:left;}
+
+li a{display: block;
+    color: cyan;
+    text-align: center;
+    padding: 20px;
+    font-size: x-large;
+    text-decoration:white;
+    }
+li a:hover {
+    background-color:black;;
+}
+</style>
+<body>
+      <ul>
+        <li><a href='http://127.0.0.1:5500/HTML/webpage/webpage.html'>Home</a></li>
+        <li><a href='http://127.0.0.1:5500/HTML/webpage/HTML_ForProject.html'>Personal Projects</a></li>
+        <li><a href='http://127.0.0.1:5500/HTML/webpage/resume.html'>Resume</a></li>
+        <li><a href='http://127.0.0.1:5500/HTML/webpage/fileUploader.html'>File Uploader</a></li>
+    </ul>
+
+<h1 style="color: cyan;">File Upload</h1>
+<input type="file" id="fileUploader" multiple>
+<a href="http://127.0.0.1:5500/HTML/webpage/Home.html" id="link" download style="display: none">shouldn't be visible</a>
+
+<p>I am always looking for cool things to learn. If you could please
+    upload a file you would like me to look at learn something new.</p>
+    <p id="feedback"></p>
+    <label id="progress-label" for="progress"></label>
+    <progress id="progress" value="0" max="100"> </progress>
+
+
+</div>
+</body>
+</html>
+<script src="fileUpload.js"></script>
+
+<!--//We can use the accept attribute to limit the type of files to upload. 
+You may want to show only the allowed types of images to browse from when 
+a user is uploading a profile picture.
+
+COPY
+<input type="file" id="file-uploader" accept=".jpg, .png" multiple>-->
