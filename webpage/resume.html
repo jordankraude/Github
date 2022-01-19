@@ -81,17 +81,16 @@
     </p>
     <img src="Keanu Reeves.gif" alt="Thank You" style="float:right; margin-right: 30px; margin-bottom: 30px;" width="200" height="250">
     <h3 style="text-align: center; margin-left: 230px; color: cyan;">If you would like me to get in contact with you </h3>
-    <form action="HTML\webpage\emailForResume.php" method="POST"name="message" margin-left:10px;>
-    <label for:contactName>Please type your name: </label>
-    <input type="text" id="contactName" name="contactName"><br><br>
-    <label for:contactEmail>Please enter an email in which I can get in contact with you: </label>
-    <input type="email" id="contactEmail" name="contactEmail" maxlength="50"> <br><br>
-    <label for:contactNumber>Enter the phone number you would like me to message or call to get back in contact: </label>
-    <input type="number" id="contactNumber" name="contactNumber" max="9"><br><br>
-    <label for:time>Enter the time that would work best for you for me to reach out: </label>
-    <input type="time" id="time" name="time" placeholder="exp. 6:00 PM"><br><br>
-    <input type="submit" id= "submit" value="submit">
-
+    <form action="mailto:jordankraudeTP@gmail.com" method="post" enctype="text/plain" margin-left:10px;>
+        <label for:contactName>Please type your name: </label>
+        <input type="text" id="contactName" name="Name"><br><br>
+        <label for:contactEmail>Please enter an email in which I can get in contact with you: </label>
+        <input type="email" id="contactEmail" name="Email" maxlength="50"> <br><br>
+        <label for:contactNumber>Enter the phone number you would like me to message or call to get back in contact: </label>
+        <input type="number" id="contactNumber" name="Phone Number" maxlength="10"><br><br>
+        <label for:time>Enter the time that would work best for you for me to reach out: </label>
+        <input type="time" id="time" name="Best Time To Reach Out" placeholder="exp. 6:00 PM"><br><br>
+        <input type="submit" id= "submit" value="submit">
     </form>
 </body>
 
@@ -99,3 +98,5 @@
 
 <!--input type="email" id="email"
        pattern=".+@globex\.com" size="30" required-->
+<!--<form action="HTML\webpage\emailForResume.php" method="POST"name="message" margin-left:10px;>-->
+<!--
