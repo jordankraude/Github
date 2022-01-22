@@ -75,15 +75,15 @@ function sortByPhoto() {
     input = document.getElementById('choice').value
     switch(input) {
         case "Bulbasaur": 
-        path = "https://static.wikia.nocookie.net/pokemon/images/2/21/001Bulbasaur.png/revision/latest?cb=20200620223551" + new Date().getTime()
+        path = "webpage/Images/375px-001Bulbasaur.webp" + new Date().getTime()
         break
 
     case "Charmander":
-        path = "C:/Users/Jordan/Desktop/Personal Projects/Personal-Projects/webpage/900px-004Charmander.png" + new Date().getTime()
+        path = "webpage/Images/900px-004Charmander.png" + new Date().getTime()
         break
 
     case "Squirtle":
-        path = "https://assets.pokemon.com/assets/cms2/img/pokedex/detail/007.png" + new Date().getTime()
+        path = "webpage/Images/007Squirtle.png" + new Date().getTime()
         break
     }
     var image = document.getElementById('PokemonImg')
