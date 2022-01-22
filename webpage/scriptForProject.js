@@ -10,12 +10,13 @@ function capitalize(str) {
 function output(pokemon) {
     reset()
         let pokemonName = document.createElement('h3');
+        let body = document.createElement('article');
 
         fullName = capitalize(pokemon.name);
         pokemonName.textContent = fullName;
-        article.appendChild(pokemonName);
+        body.appendChild(pokemonName);
 
-        let body = document.createElement('article');
+
 
         let pokemonStats = document.createElement('ul');
         pokemonStats.textContent = "STATS";
@@ -27,6 +28,8 @@ function output(pokemon) {
         let pokemonStatsNameSPATK = document.createElement('li');
         let pokemonStatsNameSPDEF = document.createElement('li');
         let pokemonStatsNameSPEED = document.createElement('li');
+
+        
         pokemonStatsNameHP.textContent = pokemon.stats[0].stat.name + ':    ' + pokemon.stats[0].base_stat;
         pokemonStatsNameATK.textContent = pokemon.stats[1].stat.name + ':    ' + pokemon.stats[1].base_stat;
         pokemonStatsNameDEF.textContent = pokemon.stats[2].stat.name + ':    ' + pokemon.stats[2].base_stat;
@@ -42,7 +45,6 @@ function output(pokemon) {
         pokemonStats.appendChild(pokemonStatsNameSPEED)
 
         body.appendChild(pokemonStats);
-
         document.querySelector('#Pokemon').appendChild(body);
     };
 
@@ -69,4 +71,28 @@ function sortBy() {
     dataDownload(url)
     }
 
+function sortByPhoto() {
+    input = document.getElementById('choice').value
+    switch(input) {
+        case "Bulbasaur": 
+        path = "https://static.wikia.nocookie.net/pokemon/images/2/21/001Bulbasaur.png/revision/latest?cb=20200620223551" + new Date().getTime()
+        break
+
+    case "Charmander":
+        path = "C:/Users/Jordan/Desktop/Personal Projects/Personal-Projects/webpage/900px-004Charmander.png" + new Date().getTime()
+        break
+
+    case "Squirtle":
+        path = "https://assets.pokemon.com/assets/cms2/img/pokedex/detail/007.png" + new Date().getTime()
+        break
+    }
+    var image = document.getElementById('PokemonImg')
+    image.src = path + new Date().getTime();
+    
+    
+}
+
+
 document.getElementById('choice').addEventListener('change', sortBy)
+document.getElementById('choice').addEventListener('change', sortByPhoto)
+

@@ -1,39 +1,42 @@
 <!DOCTYPE html>
 <html lang="en">
-  <style>
-    ul {
-          list-style-type: none;
-          margin: 0;
-          padding: 0;
-          overflow: hidden;
-          background-color: white;
-          color: white;
-          
-        }
-
-    li {float:left
-        ;
-    }
-
-    li a{display: block;
-        color: cyan;
-        text-align: center;
-        padding: 20px;
-        font-size: x-large;
-        text-decoration:white;
-        color: white;
-        }
-    li a:hover {
-        background-color:black;
-        color: white;
-    }
-  </style>
   <head>
+    <style>
+      ul {
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+            overflow: hidden;
+            background-color: black;
+            border: 5px solid white;
+            
+          }
+  
+      li a{display: block;
+          color: cyan;
+          text-align: center;
+          padding: 20px;
+          font-size: x-large;
+          text-decoration:white;
+          }
+      li a:hover {
+          background-color:white;
+      }
+      .li {float: left;}
+
+    </style>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Pokemon</title>
     <script src="main.js" type="module"></script>
   </head>
+  <ul>
+    <li class="li"><a href='index.html'>Home</a></li>
+    <li class="li"><a href='HTML_ForProject.html'>Personal Projects</a></li>
+    <li class="li"><a href='resume.html'>Resume</a></li>
+    <li class="li"><a href='fileUploader.html'>File Uploader</a></li>
+    <li class="li"><a href='https://github.com/jordankraude/Personal-Projects/tree/master/showcaseProjects'>Github Projects</a></li>
+</ul>
   <body style="background-color: black;">
     <h1 style="text-align: center; color:cyan">The Three Starter Pokemon</h1>
     <select id="choice">
@@ -42,8 +45,10 @@
       <option value="Charmander">Charmander</option>
       <option value="Squirtle">Squirtle</option>
     </select>
-    <section id="Pokemon" style="color: cyan; background-color: antiquewhite;"></section>
   </body>
+  <div id="Pokemon" style="color: cyan; background-color: black; font-size: large; padding-right: 50%; border-spacing: 3px; ">
+  </div>
+  <img id="PokemonImg" src='https://assets.pokemon.com/assets/cms2/img/pokedex/full/001.png' style="float: right;" >
 </html>
 
 <script src="scriptForProject.js"></script>
