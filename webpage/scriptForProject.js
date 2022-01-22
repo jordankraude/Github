@@ -75,15 +75,15 @@ function sortByPhoto() {
     input = document.getElementById('choice').value
     switch(input) {
         case "Bulbasaur": 
-        path = "webpage/Images/375px-001Bulbasaur.webp" + new Date().getTime()
+        path = "https://github.com/jordankraude/Personal-Projects/blob/master/webpage/Images/001.png?raw=true" + new Date().getTime()
         break
 
     case "Charmander":
-        path = "webpage/Images/900px-004Charmander.png" + new Date().getTime()
+        path = "https://github.com/jordankraude/Personal-Projects/blob/master/webpage/Images/004.png?raw=true" + new Date().getTime()
         break
 
     case "Squirtle":
-        path = "webpage/Images/007Squirtle.png" + new Date().getTime()
+        path = "https://github.com/jordankraude/Personal-Projects/blob/master/webpage/Images/007.png?raw=true" + new Date().getTime()
         break
     }
     var image = document.getElementById('PokemonImg')
