@@ -19,7 +19,7 @@ function output(pokemon) {
 
 
         let pokemonStats = document.createElement('ul');
-        pokemonStats.textContent = "STATS";
+        pokemonStats.textContent = "BASE STATS";
 
         // Gets the name for the stat and creates a formatted list inthe html
         let pokemonStatsNameHP = document.createElement('li');

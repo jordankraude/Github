@@ -12,8 +12,7 @@ class Yes_No_validater:
             print("Please type 'Yes' or 'No': ")
             print()
             self.correct_input = True
-
-
+            
         return choice
 
     def validate_input(self, prompt_question):

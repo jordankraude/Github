@@ -96,7 +96,7 @@ def main():
             print (f'The total price of the items in the shopping cart is {total_sum:.2f}')
             print('')
         
-        elif main_menu_choice > 5:
+        elif main_menu_choice > 5 or main_menu_choice <= 0:
             print('Invalid Choice')
 
     #Out of the loop, show the cart items and prices with the total
