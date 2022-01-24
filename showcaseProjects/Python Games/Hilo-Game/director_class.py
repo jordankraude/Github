@@ -1,4 +1,6 @@
 from card_class import Card
+from validaterClass import validater
+validater = validater()
 
 class director:
     """The responsibility of the director is to direct the game of Hilo"""
@@ -11,7 +13,7 @@ class director:
     
     def start_game(self):
         #Creates loop for the game
-        play = input('Would you like to play Hilo? [Y/N] ').upper()
+        play = validater.validate_input('Would you like to play Hilo? ', "Y/N")
         if play == "Y":
             self.isplaying = True
         else:
@@ -29,7 +31,7 @@ class director:
             old_value = self.card.value
         #Lets the user choose higher or lower
             print(f'\nThe value of the card is "{self.card.value}"')
-            self.HorL = input('Higher or Lower? [H/L] ').upper()
+            self.HorL = validater.validate_input('Higher or Lower? ', "H/L")
 
         #Needs to return the variable so it can become global to be inputed into the updates function
             return old_value
@@ -73,7 +75,7 @@ class director:
             self.card.card_draw()
 
         else:
-            play = input('Would you like to draw again? [Y/N]: ').upper()
+            play = validater.validate_input('Would you like to draw again? ', "Y/N")
             self.isplaying = (play == 'Y')
             
 
