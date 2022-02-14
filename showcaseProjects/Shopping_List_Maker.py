@@ -1,4 +1,8 @@
 #Needed variables and definitions before
+from numpy import true_divide
+from validaterClass import validater
+validater = validater()
+
 def main():
     shopping_list = []
     food_item = None
@@ -6,8 +10,8 @@ def main():
     shopping_price_total_string = []
     item_price = None
     another_item = None
-    main_menu_choice = 0
     z = -1
+    running = True
     main_menu = ['1. Add a new item', '2. Display the contents of the shopping cart',
     '3. Remove an item', '4. Compute the total', '5. Checkout']
 
@@ -15,12 +19,21 @@ def main():
     print('')
 
     #Loop to keep the custumer in the program if they don't choose to quit
-    while main_menu_choice != 5:
+    while running is True:
         for item in main_menu:
             print(item)
-
-        main_menu_choice = int(input('Please enter an action: '))
-        print('')
+        
+        try:
+            valid = False
+            while not valid:
+                main_menu_choice = int(input('Please enter an action: '))
+                print('')
+                if main_menu_choice >= 1 and main_menu_choice <= 5:
+                    valid = True
+                else:
+                    print('Please enter a number between 1 and 5:')
+        except:
+            print('That is an invalid input')
 
     #Choice 1. If they choose number 1 to add a item
         if main_menu_choice == 1:
@@ -39,17 +52,8 @@ def main():
                 shopping_price_total_string.append(item_price_final)
                 shopping_price_total.append(item_price)
 
-                while True:
-                    another_item = input('Do you want to add another item? (yes or no) ').lower()
-                    if another_item != 'no' or 'yes':
-                        print('That is not a valid response, please type "YES" or "NO": ')
-                        valid = False
-                    else:
-                        valid = True
-                    
-                    break
-                    
-                
+
+                another_item = validater.validate_input('Do you want to add another item? ', "Y/N")  
             print('')
 
     #Choice 2. If they want to see their cart
@@ -96,10 +100,14 @@ def main():
             print (f'The total price of the items in the shopping cart is {total_sum:.2f}')
             print('')
         
-        elif main_menu_choice > 5 or main_menu_choice <= 0:
+        elif main_menu_choice == 5:
+            running = False
+        #Out of the loop, show the cart items and prices with the total
+            print('Have a great day! We hope you shop with us again')
+
+        else:
             print('Invalid Choice')
 
-    #Out of the loop, show the cart items and prices with the total
-    print('Have a great day! We hope you shop with us again')
+
 
 main()
