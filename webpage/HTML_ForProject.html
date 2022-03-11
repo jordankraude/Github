@@ -22,7 +22,14 @@
       li a:hover {
           background-color:lightslategray;
       }
-      .li {float: left;}
+      .li {float: left}
+
+      #bottom-box {display: grid;
+      grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+  flex-wrap: wrap;}
+      #bottom-box p {grid-column: 2/6;
+      }
 
     </style>
     <meta charset="UTF-8" />
@@ -45,13 +52,13 @@
       <option value="Charmander">Charmander</option>
       <option value="Squirtle">Squirtle</option>
     </select>
+    <section>
+      <img id="PokemonImg" src='https://www.pikpng.com/pngl/b/72-726234_pokemon-starters-png-starter-pokemon-png-clipart.png' style="float:right">
+    <div id="Pokemon" style="color: cyan; background-color: black; font-size: xx-large; border-spacing: 3px; ">
+    </div>
+    </section>
   </body>
-  <section>
-    <img id="PokemonImg" src='https://www.pikpng.com/pngl/b/72-726234_pokemon-starters-png-starter-pokemon-png-clipart.png' style="float:right">
-  <div id="Pokemon" style="color: cyan; background-color: black; font-size: xx-large; border-spacing: 3px; ">
-  </div>
 
-  </section>
   
 </html>
 
