@@ -112,6 +112,59 @@
     #grid3textright h3 {text-align: center;
                 }    
 
+    /* Dropdown Button */
+.dropbtn {
+  background-color: #0F0F0F;
+  color: #c40eed;
+  font-family: serif;
+padding: 20px;
+text-align: center;
+font-size: x-large;
+  border: none;
+}
+
+/* The container <div> - needed to position the dropdown content */
+.dropdown {
+  display: inline-block;
+  grid-row: 1;
+    grid-column: 1/6;
+}
+
+.dropdown-content a {
+  color: #c40eed;;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+}
+
+/* Dropdown Content (Hidden by Default) */
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #0F0F0F;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+  font-size: 2em;
+}
+
+/* Links inside the dropdown */
+.dropdown-content a {
+  color: #c40eed;;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+}
+
+/* Change color of dropdown links on hover */
+.dropdown-content a:hover {background-color: white;}
+
+/* Show the dropdown menu on hover */
+.dropdown:hover .dropdown-content {display: block;}
+
+/* Change the background color of the dropdown button when the dropdown content is shown */
+.dropdown:hover .dropbtn {background-color: lightslategray}
+
 </style>
 </head>
 <header>
@@ -120,7 +173,17 @@
         <li><a href='HTML_ForProject.html'>Pokemon Starters</a></li>
         <li><a href='resume.html'>Resume</a></li>
         <li><a href='fileUploader.html'>File Uploader</a></li>
-        <li><a href='https://github.com/jordankraude/Personal-Projects/tree/master/showcaseProjects' target="_blank">Github Projects</a></li>
+        <li>Github Projectaaaaaaasaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa</li>
+        <li><div class="dropdown">
+            <button class="dropbtn">Github Projects</button>
+            <div class="dropdown-content">
+              <a href='https://github.com/jordankraude/Personal-Projects/tree/master/showcaseProjects' target="_blank">Main Page</a>
+              <a href="https://github.com/jordankraude/Personal-Projects/blob/master/showcaseProjects/Chemistry%20Calculator/Chemistry_calculator.py" target="_blank">Chemistry Calculator</a>
+              <a href="https://github.com/jordankraude/Personal-Projects/tree/master/showcaseProjects/Python%20Games/Hilo-Game" target="_blank">Hilo Game</a>
+              <a href="#" target="_blank">Tron Light Cycle Game</a>
+            </div>
+          </div>
+        </li>
     </ul>
 </header>
 <body id="pagegrid">
@@ -165,7 +228,6 @@
             <img src="Images\nikita-kachanovsky-OVbeSXRk_9E-unsplash.jpg">
         </div>
     </section>
-
 
 
 </body>
