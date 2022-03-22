@@ -25,7 +25,7 @@ strife_time_format = now.strftime('%c')
 products = {}
 
 # Open the file products (supplied by the store)
-with open('products.csv') as infile1:
+with open('showcaseProjects\Receipt Maker\products.csv') as infile1:
     products_reader = csv.reader(infile1)
 
     # Skip the first line in products because it is no bueno
@@ -51,7 +51,7 @@ print('')
 receipt = {}
 # For the code to work exactly as required the file inside would need to be a variable with the
 # name changing to whatever the computer supplied from the customer
-with open ('request.csv') as infile2:
+with open ('showcaseProjects\Receipt Maker\\request.csv') as infile2:
     request_reader = csv.reader(infile2)
     next(request_reader)
 
