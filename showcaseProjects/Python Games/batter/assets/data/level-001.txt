@@ -1,0 +1,5 @@
+x1, b1, b1, b1, b1, b1, b1, b1, b1, b1, b1, b1, b1
+b1, g9, b1, g9, b1, g9, b1, g9, b1, g9, b1, g9, b1
+g9, b1, g9, b1, g9, b1, g9, b1, g9, b1, g9, b1, g9
+b1, g9, b1, g9, b1, g9, b1, g9, b1, g9, b1, g9, b1
+b1, b1, b1, b1, b1, b1, b1, b1, b1, b1, b1, b1, b1

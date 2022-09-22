@@ -1,0 +1,36 @@
+Classes:
+1. Word Class
+- Responsibility: To keep the list of words to be chosen from and chooses a random word
+with each restart of the game
+- States: word_list[]
+          word_display
+- Behaviors: get_word()
+             update_word()
+             check_maturity()
+          
+
+2. Director Class
+- Responsibility: To run and keep the game going as long as the user chooses
+- States: running_state
+- Behaviors: start_game()
+             get_input()
+             do_updates()
+             end_game()
+          
+
+3. Display Class
+- Responsiblity: To display the image of a parachute and the word with previous guesses
+- States: 
+- Behaviors: display()
+
+4. Validater Class **
+- Responsibility: To validate user input
+- States: none
+- Behaviors: validate()
+
+5. Parachute Class
+- Responsibility: To keep the state of a parachute and update the parachute
+- States: list[Parachute]
+- Behaviors: 1. delete_piece()
+             2. empty_list()
+
